@@ -77,6 +77,19 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    _id: '7',
+    name: 'My Valintine',
+    image: '/images/roses.png',
+    description:
+      'Radiant. Timeless. Romantic. There’s something so special about these red roses, especially the way someone you love will feel when these beautiful florals arrive at their door.',
+    brand: 'Flowers',
+    category: 'Plant',
+    price: 54.99,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
 ]
 
 export default products

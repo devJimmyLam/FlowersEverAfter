@@ -79,8 +79,8 @@ const products = [
   },
   {
     _id: '7',
-    name: 'My Valintine',
-    image: '/images/myvalintine.jpg',
+    name: 'My Valentine',
+    image: '/images/myValentine.jpg',
     description:
       'Radiant. Timeless. Romantic. There’s something so special about these red roses, especially the way someone you love will feel when these beautiful florals arrive at their door.',
     brand: 'Flowers',

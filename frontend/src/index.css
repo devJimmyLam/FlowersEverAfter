@@ -18,10 +18,11 @@ i {
   width: auto;
 }
 
-h3{
+h3 {
   padding: 1rem 0;
 }
 
 .rating span {
   margin: 0.1rem;
+  font-size: small;
 }

@@ -17,3 +17,11 @@ i {
   height: .5rem;
   width: auto;
 }
+
+h3{
+  padding: 1rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}

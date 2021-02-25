@@ -1,0 +1,22 @@
+{
+  "name": "flowerseverafter",
+  "version": "1.0.0",
+  "description": "MERN floral shop app.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devJimmyLam/FlowersEverAfter.git"
+  },
+  "author": "Jimmy Lam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devJimmyLam/FlowersEverAfter/issues"
+  },
+  "homepage": "https://github.com/devJimmyLam/FlowersEverAfter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -86,7 +86,7 @@ const products = [
     brand: 'Flowers',
     category: 'Plant',
     price: 54.99,
-    countInStock: 0,
+    countInStock: 12,
     rating: 4,
     numReviews: 12,
   },

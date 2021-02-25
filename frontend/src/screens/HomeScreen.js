@@ -8,7 +8,7 @@ const HomeScreen = () => {
 	//allow us to pull products and update them
 	const [products, setProducts] = useState([])
 
-	//allow us to 
+	//allow us to fetch products from react 
 	useEffect(() => {
 		const fetchProducts = async () => {
 			const { data } = await axios.get('api/products')

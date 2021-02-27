@@ -1,5 +1,6 @@
+
 import React from 'react'
-import { Spinner } from "react-bootstrap";
+import { Spinner } from 'react-bootstrap'
 
 const Loader = () => {
 	return (
@@ -13,7 +14,7 @@ const Loader = () => {
 				display: 'block',
 			}}
 		>
-			<span class='sr-only'>Loading...</span>
+			<span className='sr-only'>Loading...</span>
 		</Spinner>
 	)
 }

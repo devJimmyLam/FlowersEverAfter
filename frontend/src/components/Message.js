@@ -1,8 +1,8 @@
 import React from 'react'
 import { Children } from 'react';
-import { Alert } from "react-bootstrp";
+import { Alert } from "react-bootstrap";
 
-const Message = ({ varient, children }) => {
+const Message = ({ variant, children }) => {
 	return (
 		<Alert variant={variant}>
 			{children}

@@ -15,7 +15,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
 			image: data.image,
 			price: data.price,
 			countInStock: data.countInStock,
-			qty
+			qty,
 		}
 	})
 	//we want to save it in local storage so we can use our local storage API call set item.So this is where we use get state and we can say cart and then we want the cart items in our state.Now, this is going to give us a JSON JavaScript object.So we want to call JSON.stringify because we can only save string's in local storage and then once we take it out, we'll have to use JSON.parse to pass it back to JavaScript.

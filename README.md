@@ -29,7 +29,7 @@ E-commerce floral shop allowing customers to purchase floral arrangements.
 ```bash
 $ git clone https://github.com/devJimmyLam/FlowersEverAfter.git
 ```
-2. Install node lastest verstion 14.15+
+2. Install node lastest version 14.15+
 ```
 # checking node version
 node -v

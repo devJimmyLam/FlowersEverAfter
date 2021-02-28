@@ -1,4 +1,4 @@
-import { CART_ADD_ITEM } from '../constants/productConstants/js'
+import { CART_ADD_ITEM } from '../constants/cartConstants.js'
 
 //state object will have cartitem because there can be more than 1 product, also passing in action.
 export const cartReducer = (state = { cartItems: [] }, action) => {

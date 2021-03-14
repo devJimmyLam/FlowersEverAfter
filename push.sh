@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "completed implemented custom auth middleware"
+git commit -m "completed implemented token using postman for testing"
 
 git status
 

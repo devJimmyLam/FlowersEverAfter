@@ -5,6 +5,6 @@ import {
 }
 	from '../controllers/userController.js'
 
-router.route('/login', authUser);
+router.post('/login', authUser);
 
 export default router;

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "changed name of productController file."
+git commit -m "completed implemented custom auth middleware"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "completed implemented token using postman for testing"
+git commit -m "completed implemented user reg and pw encryption"
 
 git status
 

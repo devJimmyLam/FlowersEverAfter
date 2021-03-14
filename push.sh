@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added push shell"
+git commit -m "changed name of productController file."
 
 git status
 

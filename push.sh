@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "completed implemented user reg and pw encryption"
+git commit -m "completed implementation for User Login Reducer & Action"
 
 git status
 

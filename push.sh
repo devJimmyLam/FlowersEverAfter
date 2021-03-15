@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "implemented user login screen and functionality"
+git commit -m "debug user login success action"
 
 git status
 

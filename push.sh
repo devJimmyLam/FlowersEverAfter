@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "completed implementation for User Login Reducer & Action"
+git commit -m "implemented user login screen and functionality"
 
 git status
 

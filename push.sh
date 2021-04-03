@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated Register link"
+git commit -m "add userName in navbar & created logout"
 
 git status
 

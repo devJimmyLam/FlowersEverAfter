@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "add userRegister in navbar & created register"
+git commit -m "updated notes"
 
 git status
 

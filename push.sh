@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "fixed typo in class"
+git commit -m "updated email label"
 
 git status
 

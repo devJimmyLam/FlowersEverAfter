@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "debug user login success action"
+git commit -m "fixed typo in class"
 
 git status
 

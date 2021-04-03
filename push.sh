@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated email label"
+git commit -m "updated Register link"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated notes"
+git commit -m "updated profile endpoint"
 
 git status
 

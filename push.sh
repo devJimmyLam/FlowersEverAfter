@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated profile endpoint"
+git commit -m "create profile screen & get user details"
 
 git status
 

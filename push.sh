@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[TODO] CREATE CHECKOUT PROCESS"
+git commit -m "created shipping screen and save address"
 
 git status
 

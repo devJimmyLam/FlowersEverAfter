@@ -1,14 +1,14 @@
-import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants.js'
+import {
+	CART_ADD_ITEM,
+	CART_REMOVE_ITEM,
+	CART_SAVE_SHIPPING_ADDRESS
+} from '../constants/cartConstants.js'
 
-//state object will have cartitem because there can be more than 1 product, also passing in action.
-export const cartReducer = (state = { cartItems: [] }, action) => {
-	//swith for action type
+
+export const cartReducer = (state = { cartItems: [], shippingAddress: {} }, action) => {
 	switch (action.type) {
 		case CART_ADD_ITEM:
-			//if we add cart and it is already there 
 			const item = action.payload
-			//find if it item exist, we can get from state in our cart items and find if it exist
-			//for x in x.products 
 			const existItem = state.cartItems.find((x) => x.product === item.product)
 
 			if (existItem) {
@@ -29,7 +29,13 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
 				...state,
 				cartItems: state.cartItems.filter((x) => x.product !== action.payload)
 			}
+		case CART_SAVE_SHIPPING_ADDRESS:
+			return {
+				...state,
+				shippingAddress: action.payload,
+			}
 		default:
 			return state;
 	}
 }
+

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "create update user profile"
+git commit -m "[TODO] CREATE CHECKOUT PROCESS"
 
 git status
 

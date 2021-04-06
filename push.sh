@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created checkout steps components"
+git commit -m "created payment screen and payment method"
 
 git status
 

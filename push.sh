@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created order controller and routes "
+git commit -m "created order "
 
 git status
 

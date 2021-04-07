@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created payment screen and payment method"
+git commit -m "created place order screen"
 
 git status
 

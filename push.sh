@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "debugged get order id from db."
+git commit -m "created ordered detals reducers and actions."
 
 git status
 

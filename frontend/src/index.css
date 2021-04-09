@@ -32,6 +32,10 @@ h2 {
   padding: 0.5rem 0;
 }
 
+h5 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
 .rating span {
   margin: 0.1rem;
   font-size: small;

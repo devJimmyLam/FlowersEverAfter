@@ -78,7 +78,7 @@ const products = [
       'Radiant. Timeless. Romantic. There’s something so special about these red roses, especially the way someone you love will feel when these beautiful florals arrive at their door.',
     brand: 'Flowers',
     category: 'Plant',
-    price: 54.99,
+    price: 64.99,
     countInStock: 12,
     rating: 4,
     numReviews: 12,

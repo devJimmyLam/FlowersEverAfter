@@ -12,7 +12,7 @@ const Header = () => {
 	const { userInfo } = userLogin;
 
 	const logoutHandler = () => {
-		console.log( 'user is logout');
+		console.log('user is logout');
 		dispatch(logout());
 	}
 

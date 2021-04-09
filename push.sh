@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated products and css home screen."
+git commit -m "debugged get order id from db."
 
 git status
 

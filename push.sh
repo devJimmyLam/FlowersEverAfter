@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created order screen."
+git commit -m "created order paid endpoint."
 
 git status
 

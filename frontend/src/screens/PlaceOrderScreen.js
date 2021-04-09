@@ -78,37 +78,36 @@ const PlaceOrderScreen = ({ history }) => {
 								({cart.cartItems.reduce((acc, item) => acc + item.qty, 0)})
 							</h2>
 
-							{cart.cartItems.length === 0 ?
+							{cart.cartItems.length === 0 ? (
 								<Message>Your cart is empty</Message>
-								:
-								(
-									<ListGroup variant='flush'>
-										{cart.cartItems.map((item, index) => (
+							) : (
+								<ListGroup variant='flush'>
+									{cart.cartItems.map((item, index) => (
 
-											<ListGroup.Item key={index}>
-												<Row>
-													<Col md={3}>
-														<Image
-															src={item.image}
-															alt={item.name}
-															fluid
-															rounded
-														/>
-													</Col>
-													<Col>
-														<Link to={`/product/${item.product}`}>
-															{item.name}
-														</Link>
-													</Col>
-													<Col md={4}>
-														{item.qty} x ${item.price} = ${item.qty * item.price}
-													</Col>
-												</Row>
-											</ListGroup.Item>
+										<ListGroup.Item key={index}>
+											<Row>
+												<Col md={3}>
+													<Image
+														src={item.image}
+														alt={item.name}
+														fluid
+														rounded
+													/>
+												</Col>
+												<Col>
+													<Link to={`/product/${item.product}`}>
+														{item.name}
+													</Link>
+												</Col>
+												<Col md={4}>
+													{item.qty} x ${item.price} = ${item.qty * item.price}
+												</Col>
+											</Row>
+										</ListGroup.Item>
 
-										))}
-									</ListGroup>
-								)
+									))}
+								</ListGroup>
+							)
 							}
 						</ListGroup.Item>
 

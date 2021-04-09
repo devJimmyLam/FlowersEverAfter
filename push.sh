@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created ordered detals reducers and actions."
+git commit -m "created order screen."
 
 git status
 

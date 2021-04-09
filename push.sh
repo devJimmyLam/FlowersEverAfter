@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created order paid endpoint."
+git commit -m "created order pay reducer and action."
 
 git status
 

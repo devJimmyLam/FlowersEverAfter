@@ -101,12 +101,12 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 })
 
 
-// // PRIVATE/ADMIN	access route to get all users
-// // GET				/api/users
-// const getUsers = asyncHandler(async (req, res) => {
-// 	const users = await User.find({})
-// 	res.json(users)
-// })
+// PRIVATE/ADMIN	access route to get all users
+// GET				/api/users
+const getUsers = asyncHandler(async (req, res) => {
+	const users = await User.find({})
+	res.json(users)
+})
 
 // // PRIVATE/ADMIN	access route to delete user
 // // DELETE			/api/users/:id
@@ -164,7 +164,7 @@ export {
 	registerUser,
 	getUserProfile,
 	updateUserProfile,
-	// getUsers,
+	getUsers,
 	// deleteUser,
 	// getUserById,
 	// updateUser,

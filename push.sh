@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated user details & order reset in local storage."
+git commit -m "created admin middleware and added get users endpoints"
 
 git status
 

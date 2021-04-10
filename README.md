@@ -1,15 +1,22 @@
 
 # FlowersEverAfter
 E-commerce floral shop allowing customers to purchase floral arrangements.
-## Features 
-- Full featured shopping cart
+## Features
+- Designed a fast and moden ReactJS UI, allowing users to shop, rate, and review floral bouquet products.
+
+- Integrated Paypal SDK and customized middleware to provide both users and proprietors fast and secure payment options.
+
+- Engineered a RESTful API backend deployed on Heroku with endpoints for products, users and orders.
+
+- Built an Admin platform and leveraged the Redux library to provide proprietors with a customized dashboard of customer sales data.
+<!-- - Full featured shopping cart
 - Product reviews and ratings
 - Product search feature
 - User profile with orders
 - Admin product management
 - Admin user management
 - Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration
+- PayPal / credit card integration -->
 ## Demo COMING SOON
 <!-- <p align="center">
   <img src="./src/main/resources/images/DEMO_ticket tracker.gif">

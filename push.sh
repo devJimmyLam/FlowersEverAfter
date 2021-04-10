@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "rendered orders on profile screen."
+git commit -m "updated user details & order reset in local storage."
 
 git status
 

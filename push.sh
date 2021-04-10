@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "add paypal payments scripts."
+git commit -m "rendered orders on profile screen."
 
 git status
 

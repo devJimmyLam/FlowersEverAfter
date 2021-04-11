@@ -20,6 +20,7 @@ const Header = () => {
 		<header>
 			<Navbar bg="dark" varient='dark' expand="lg" collapseOnSelect>
 				<Container>
+
 					<LinkContainer to='/'>
 						<Navbar.Brand className=' text-light'>FlowersEverAfter</Navbar.Brand>
 					</LinkContainer>
@@ -34,6 +35,7 @@ const Header = () => {
 									<i className='fas fa-shopping-cart px-2'></i>Cart
 								</Nav.Link>
 							</LinkContainer>
+
 							{userInfo ? (
 								<NavDropdown
 									title={userInfo.name}
@@ -49,12 +51,12 @@ const Header = () => {
 								<LinkContainer to='/login'>
 									<Nav.Link>
 										<i className='fas fa-user px-2'></i>Sign In
-							</Nav.Link>
+									</Nav.Link>
 								</LinkContainer>
 							)}
-							{userInfo && userInfo.isAdmin && (
-								<NavDropdown title='Admin' id="adminmenue">
 
+							{userInfo && userInfo.isAdmin && (
+								<NavDropdown title='Admin' id="adminmenue" className='ml-5'>
 									<LinkContainer to='/admin/userlist'>
 										<NavDropdown.Item>Users</NavDropdown.Item>
 									</LinkContainer>
@@ -63,20 +65,6 @@ const Header = () => {
 										<NavDropdown.Item>Products</NavDropdown.Item>
 									</LinkContainer>
 
-									<LinkContainer to='/admin/orderlist'>
-										<NavDropdown.Item>Orders</NavDropdown.Item>
-									</LinkContainer>
-
-								</NavDropdown>
-							)}
-							{userInfo && userInfo.isAdmin && (
-								<NavDropdown title='Admin' id='adminmenu'>
-									<LinkContainer to='/admin/userlist'>
-										<NavDropdown.Item>Users</NavDropdown.Item>
-									</LinkContainer>
-									<LinkContainer to='/admin/productlist'>
-										<NavDropdown.Item>Products</NavDropdown.Item>
-									</LinkContainer>
 									<LinkContainer to='/admin/orderlist'>
 										<NavDropdown.Item>Orders</NavDropdown.Item>
 									</LinkContainer>

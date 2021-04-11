@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "fixed bug with error message for /admin/userlist."
+git commit -m "created admin screen security"
 
 git status
 

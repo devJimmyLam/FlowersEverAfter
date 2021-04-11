@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin middleware and added get users endpoints"
+git commit -m "created admin user list"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added css margin-left to admin dropdown."
+git commit -m "fixed bug with error message for /admin/userlist."
 
 git status
 

@@ -33,8 +33,9 @@ const admin = (req, res, next) => {
 		next()
 	} else {
 		res.status(401)
-		throw new Error('Contact your admin for access')
+		throw new Error('Please contact your admin for access to page.')
 	}
+
 }
 
 export { protect, admin }

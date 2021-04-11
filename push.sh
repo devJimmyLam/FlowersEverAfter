@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin user delete"
+git commit -m "created admin user update"
 
 git status
 

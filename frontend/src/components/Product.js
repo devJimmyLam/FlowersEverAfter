@@ -11,13 +11,13 @@ import Rating from './Rating';
 //product is destructure and used as is below
 const Product = ({ product }) => {
 	return (
-		<Card className='my-3 p-3 rounded'>
+		<Card className='my-3 p-3 rounded border-0'>
 			{/** 
 			 * 
 			we want to use a link tag because this is a SPA app  
 			 */}
 			<Link to={`/product/${product._id}`}>
-				<Card.Img src={product.image} variant='top' />
+				<Card.Img src={product.image} variant='top' className='rounded' />
 			</Link>
 			<Card.Body>
 				<Link to={`/product/${product._id}`}>

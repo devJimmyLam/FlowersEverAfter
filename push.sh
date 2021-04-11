@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin screen security"
+git commit -m "created admin user delete"
 
 git status
 

@@ -21,7 +21,7 @@ const authUser = asyncHandler(async (req, res) => {
 		})
 	} else {
 		res.status(401)
-		throw new Error('Invalid email or password')
+		throw new Error('Invalid email or password.')
 	}
 })
 // PUBLIC   access route to register a new user
@@ -33,7 +33,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
 	if (userExists) {
 		res.status(400)
-		throw new Error('User already exist')
+		throw new Error('User already exist.')
 	}
 
 	const user = await User.create({
@@ -52,7 +52,7 @@ const registerUser = asyncHandler(async (req, res) => {
 		})
 	} else {
 		res.status(400)
-		throw new Error('Invalid user data')
+		throw new Error('Invalid user data.')
 	}
 })
 // PRIVATE 	access route to get user profile
@@ -69,7 +69,7 @@ const getUserProfile = asyncHandler(async (req, res) => {
 		})
 	} else {
 		res.status(404)
-		throw new Error('User not found')
+		throw new Error('User not found.')
 	}
 })
 
@@ -96,7 +96,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 		})
 	} else {
 		res.status(404)
-		throw new Error('User not found')
+		throw new Error('User not found.')
 	}
 })
 
@@ -108,19 +108,19 @@ const getUsers = asyncHandler(async (req, res) => {
 	res.json(users)
 })
 
-// // PRIVATE/ADMIN	access route to delete user
+// // PRIVATE/ADMIN		access route to delete user
 // // DELETE			/api/users/:id
-// const deleteUser = asyncHandler(async (req, res) => {
-// 	const user = await User.findById(req.params.id)
+const deleteUser = asyncHandler(async (req, res) => {
+	const user = await User.findById(req.params.id)
 
-// 	if (user) {
-// 		await user.remove()
-// 		res.json({ message: 'User removed' })
-// 	} else {
-// 		res.status(404)
-// 		throw new Error('User not found')
-// 	}
-// })
+	if (user) {
+		await user.remove()
+		res.json({ message: 'User removed from database.' })
+	} else {
+		res.status(404)
+		throw new Error('User not found.')
+	}
+})
 
 // // PRIVATE/ADMIN	access route to get user by ID
 // // GET				/api/users/:id
@@ -165,7 +165,7 @@ export {
 	getUserProfile,
 	updateUserProfile,
 	getUsers,
-	// deleteUser,
+	deleteUser,
 	// getUserById,
 	// updateUser,
 }

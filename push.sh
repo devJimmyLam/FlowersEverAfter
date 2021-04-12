@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[bug] deliver button does not function"
+git commit -m "[bug] fixed order routes /:id/deliver"
 
 git status
 

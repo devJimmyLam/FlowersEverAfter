@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "edit product screen"
+git commit -m "created custome upload method and routes."
 
 git status
 

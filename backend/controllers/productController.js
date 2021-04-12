@@ -51,7 +51,7 @@ const createProduct = asyncHandler(async (req, res) => {
 		brand: 'Sample Brand',
 		category: 'Sample category',
 		countInStock: 0,
-
+		rating: 0,
 		numReviews: 0,
 		description: 'Sample description',
 	})

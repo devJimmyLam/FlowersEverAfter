@@ -6,8 +6,8 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import {
 	listProducts,
-	// deleteProduct,
-	// createProduct,
+	deleteProduct,
+	createProduct,
 } from '../actions/productActions'
 
 const ProductListScreen = ({ history, match }) => {
@@ -15,6 +15,22 @@ const ProductListScreen = ({ history, match }) => {
 
 	const productList = useSelector((state) => state.productList)
 	const { loading, error, products } = productList
+
+	const productDelete = useSelector((state) => state.productDelete)
+	const {
+		loading: loadingDelete,
+		error: errorDelete,
+		success: successDelete,
+	} = productDelete
+
+
+	// const productCreate = useSelector((state) => state.productCreate)
+	// const {
+	// 	loading: loadingCreate,
+	// 	error: errorCreate,
+	// 	success: successCreate,
+	// 	product: createdProduct,
+	// } = productCreate
 
 	const userLogin = useSelector((state) => state.userLogin)
 	const { userInfo } = userLogin
@@ -25,17 +41,17 @@ const ProductListScreen = ({ history, match }) => {
 		} else {
 			history.push('/login')
 		}
-	}, [dispatch, history, userInfo])
+	}, [dispatch, history, userInfo, successDelete])
 
 	const deleteHandler = (id) => {
 		if (window.confirm('Please confirm that product will be removed.')) {
-			// console.log('delete products')
+			dispatch(deleteProduct(id))
 		}
 	}
 
-	const createProductHandler = (product) => {
-		//create product
-	}
+	// const createProductHandler = (product) => {
+	// 	dispatch(createProduct())
+	// }
 
 	return (
 		<div>
@@ -44,14 +60,18 @@ const ProductListScreen = ({ history, match }) => {
 					<h1>Products</h1>
 				</Col>
 				<Col className='text-right'>
-					<Button
+					{/* <Button
 						className='my-3'
 						onClick={createProductHandler}
 					>
 						<i className='fas fa-plus'></i> Create Product
-					</Button>
+					</Button> */}
 				</Col>
 			</Row>
+			{loadingDelete && <Loader />}
+			{errorDelete && <Message variant='danger'>{errorDelete}</Message>}
+			{/* {loadingCreate && <Loader />}
+			{errorCreate && <Message variant='danger'>{errorCreate}</Message>} */}
 			{loading ? (
 				<Loader />
 			) : error ? (

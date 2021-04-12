@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin product list"
+git commit -m "created admin delete products"
 
 git status
 

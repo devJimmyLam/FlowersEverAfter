@@ -45,8 +45,8 @@ const UserListScreen = ({ history }) => {
 							<th>ID</th>
 							<th>NAME</th>
 							<th>EMAIL</th>
-							<th>ADMIN</th>
-							<th></th>
+							<th>ADMIN ROLE?</th>
+							<th>ACTIONS</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -59,9 +59,9 @@ const UserListScreen = ({ history }) => {
 								</td>
 								<td>
 									{user.isAdmin ? (
-										<i className='fas fa-check' style={{ color: 'green' }}></i>
+										<i className='fas fa-check' style={{ color: 'green' }}> Yes</i>
 									) : (
-										<i className='fas fa-times' style={{ color: 'red' }}></i>
+										<i className='fas fa-times' style={{ color: 'red' }}> No</i>
 									)}
 								</td>
 								<td>

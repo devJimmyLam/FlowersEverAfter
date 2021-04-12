@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created custome upload method and routes."
+git commit -m "created custom upload method and routes."
 
 git status
 

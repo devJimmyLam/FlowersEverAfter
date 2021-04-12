@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[debug] unable to post sample product to db. solution: added rating:0 in line 54."
+git commit -m "created admin create product button"
 
 git status
 

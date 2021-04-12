@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin order list routes and screen."
+git commit -m "[bug] deliver button does not function"
 
 git status
 

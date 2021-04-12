@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin user update"
+git commit -m "created user edit screen"
 
 git status
 

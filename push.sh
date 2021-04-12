@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created admin delete products"
+git commit -m "[bug] unable to post sample product to db."
 
 git status
 

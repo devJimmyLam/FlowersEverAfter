@@ -44,33 +44,25 @@ const deleteProduct = asyncHandler(async (req, res) => {
 // POST 			/api/products
 const createProduct = asyncHandler(async (req, res) => {
 	const product = new Product({
-		name: 'Sample name',
+		name: 'Sample Name',
 		price: 0,
 		user: req.user._id,
 		image: '/images/sample.jpg',
-		brand: 'Sample brand',
+		brand: 'Sample Brand',
 		category: 'Sample category',
 		countInStock: 0,
+
 		numReviews: 0,
 		description: 'Sample description',
 	})
-
 	const createdProduct = await product.save()
 	res.status(201).json(createdProduct)
 })
 
 // PRIVATE/ADMIN 	access route to update a product
-//PUT 				/api/products/:id
+// PUT 				/api/products/:id
 const updateProduct = asyncHandler(async (req, res) => {
-	const {
-		name,
-		price,
-		description,
-		image,
-		brand,
-		category,
-		countInStock,
-	} = req.body
+	const { name, price, description, image, brand, category, countInStock } = req.body
 
 	const product = await Product.findById(req.params.id)
 
@@ -91,53 +83,53 @@ const updateProduct = asyncHandler(async (req, res) => {
 	}
 })
 
-// PRIVATE/ADMIN 	access route to create new review
-// POST 			/api/products/:id/reviews
-const createProductReview = asyncHandler(async (req, res) => {
-	const { rating, comment } = req.body
+// // PRIVATE/ADMIN 	access route to create new review
+// // POST 			/api/products/:id/reviews
+// const createProductReview = asyncHandler(async (req, res) => {
+// 	const { rating, comment } = req.body
 
-	const product = await Product.findById(req.params.id)
+// 	const product = await Product.findById(req.params.id)
 
-	if (product) {
-		const alreadyReviewed = product.reviews.find(
-			(r) => r.user.toString() === req.user._id.toString()
-		)
+// 	if (product) {
+// 		const alreadyReviewed = product.reviews.find(
+// 			(r) => r.user.toString() === req.user._id.toString()
+// 		)
 
-		if (alreadyReviewed) {
-			res.status(400)
-			throw new Error('Product already reviewed')
-		}
+// 		if (alreadyReviewed) {
+// 			res.status(400)
+// 			throw new Error('Product already reviewed')
+// 		}
 
-		const review = {
-			name: req.user.name,
-			rating: Number(rating),
-			comment,
-			user: req.user._id,
-		}
+// 		const review = {
+// 			name: req.user.name,
+// 			rating: Number(rating),
+// 			comment,
+// 			user: req.user._id,
+// 		}
 
-		product.reviews.push(review)
+// 		product.reviews.push(review)
 
-		product.numReviews = product.reviews.length
+// 		product.numReviews = product.reviews.length
 
-		product.rating =
-			product.reviews.reduce((acc, item) => item.rating + acc, 0) /
-			product.reviews.length
+// 		product.rating =
+// 			product.reviews.reduce((acc, item) => item.rating + acc, 0) /
+// 			product.reviews.length
 
-		await product.save()
-		res.status(201).json({ message: 'Review added' })
-	} else {
-		res.status(404)
-		throw new Error('Product not found')
-	}
-})
+// 		await product.save()
+// 		res.status(201).json({ message: 'Review added' })
+// 	} else {
+// 		res.status(404)
+// 		throw new Error('Product not found')
+// 	}
+// })
 
-// PUBLIC 	access route to get top rated products
-// GET 		/api/products/top
-const getTopProducts = asyncHandler(async (req, res) => {
-	const products = await Product.find({}).sort({ rating: -1 }).limit(3)
+// // PUBLIC 	access route to get top rated products
+// // GET 		/api/products/top
+// const getTopProducts = asyncHandler(async (req, res) => {
+// 	const products = await Product.find({}).sort({ rating: -1 }).limit(3)
 
-	res.json(products)
-})
+// 	res.json(products)
+// })
 
 export {
 	getProducts,
@@ -145,6 +137,6 @@ export {
 	deleteProduct,
 	createProduct,
 	updateProduct,
-	createProductReview,
-	getTopProducts,
+	// createProductReview,
+	// getTopProducts,
 }

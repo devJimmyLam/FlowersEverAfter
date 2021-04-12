@@ -12,7 +12,7 @@ import {
 	ORDER_DELIVER_RESET,
 } from '../constants/orderConstants'
 
-const OrderScreen = ({ match }) => {
+const OrderScreen = ({ match, history }) => {
 	const orderId = match.params.id
 	const [sdkReady, setSdkReady] = useState(false)
 	const dispatch = useDispatch()
@@ -30,16 +30,20 @@ const OrderScreen = ({ match }) => {
 	const { userInfo } = userLogin
 
 	if (!loading) {
+		//   Calculate prices
 		const addDecimals = (num) => {
 			return (Math.round(num * 100) / 100).toFixed(2)
 		}
+
 		order.itemsPrice = addDecimals(
-			order.orderItems.reduce((acc, item) => acc + item.price * item.price, 0)
+			order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
 		)
 	}
 
-
 	useEffect(() => {
+		if (!userInfo) {
+			history.push('/login')
+		}
 		const addPayPalScript = async () => {
 			const { data: clientId } = await axios.get('/api/config/paypal')
 			const script = document.createElement('script')

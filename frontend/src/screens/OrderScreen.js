@@ -83,11 +83,14 @@ const OrderScreen = ({ match, history }) => {
 		: error
 			? <Message variant='danger'>{error}</Message> :
 			<div>
-				<span className='align-baseline h2'>Order</span>
-				<span className='align-baseline h3 text-success ml-2'>{order._id}</span>
+				<span className='align-baseline h2'>Purchase Details</span>
 				<Row>
 					<Col md={8}>
 						<ListGroup variant='flush'>
+							<ListGroup.Item>
+							<h2>Order</h2>
+							<span className='align-baseline h5 text-success ml-2'># {order._id}</span>
+							</ListGroup.Item>
 							<ListGroup.Item>
 								<h2>Shipping</h2>
 								<p>

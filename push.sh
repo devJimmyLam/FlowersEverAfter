@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[bug] fixed order routes /:id/deliver"
+git commit -m "updated style on order screen"
 
 git status
 

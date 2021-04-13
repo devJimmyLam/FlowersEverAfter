@@ -89,7 +89,9 @@ const OrderScreen = ({ match, history }) => {
 						<ListGroup variant='flush'>
 							<ListGroup.Item>
 							<h2>Order</h2>
-							<span className='align-baseline h5 text-success ml-2'># {order._id}</span>
+							<p>
+									<strong className=' text-success'># {order._id}</strong>
+								</p>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<h2>Shipping</h2>

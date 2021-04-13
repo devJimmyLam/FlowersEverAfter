@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated style on order screen"
+git commit -m "created review endpoints"
 
 git status
 

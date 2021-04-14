@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created review form"
+git commit -m "created search box"
 
 git status
 

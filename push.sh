@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created review endpoints"
+git commit -m "created review form"
 
 git status
 

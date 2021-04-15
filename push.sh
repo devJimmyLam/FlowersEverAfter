@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created search box"
+git commit -m "[bug] pagination: unable to render products on 2nd page"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created search box"
+git commit -m "[debug] search box: return to home"
 
 git status
 

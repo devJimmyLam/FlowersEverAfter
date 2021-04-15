@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[debug] search box: return to home"
+git commit -m "added styles to card"
 
 git status
 

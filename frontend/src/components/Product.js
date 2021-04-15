@@ -4,11 +4,12 @@ import { Card } from 'react-bootstrap';
 import Rating from './Rating';
 
 const Product = ({ product }) => {
+
 	return (
-		<Card className='my-3 p-3 rounded border-0'>
-			
+		<Card className='my-3 p-3 rounded border-0' style={{ width: '18rem' }}>
+
 			<Link to={`/product/${product._id}`}>
-				<Card.Img src={product.image} variant='top' className='rounded' />
+				<Card.Img src={product.image} variant='top' className='rounded'/>
 			</Link>
 			<Card.Body>
 				<Link to={`/product/${product._id}`}>

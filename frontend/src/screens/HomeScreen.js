@@ -8,17 +8,17 @@ import { listProducts } from '../actions/productActions.js'
 
 
 const HomeScreen = ({ match }) => {
-	const keyword = match.params.keyword
+	const keyword = match.params.keyword;
+	const pageNumber = match.params.pageNumber || 1;
 
 	const dispatch = useDispatch();
 
 	const productList = useSelector(state => state.productList);
 	const { loading, error, products } = productList;
 
-	//allow us to fetch products from react 
 	useEffect(() => {
-		dispatch(listProducts(keyword))
-	}, [dispatch, keyword])
+		dispatch(listProducts(keyword, pageNumber))
+	}, [dispatch, keyword, pageNumber])
 
 
 	return (

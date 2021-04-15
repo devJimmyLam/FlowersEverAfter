@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added styles to card"
+git commit -m "[bug]Pagination, unable to render 2nd page of products using /search/:pageNumber"
 
 git status
 

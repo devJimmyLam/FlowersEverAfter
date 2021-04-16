@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[bug]Pagination, unable to render 2nd page of products using /search/:pageNumber"
+git commit -m "[bug]Pagination: unable to render on HomeScreen. able to render ProductListScreen."
 
 git status
 

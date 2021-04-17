@@ -16,9 +16,9 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 - Checkout process (shipping, payment method, etc)
 - PayPal / credit card integration -->
 ## Demo COMING SOON
-<!-- <p align="center">
-  <img src="./src/main/resources/images/DEMO_ticket tracker.gif">
-</p> -->
+<p align="center">
+  <img src="./frontend/public/images/fea_welcome.png">
+</p>
 <hr/>
 
 ## Technology Used 

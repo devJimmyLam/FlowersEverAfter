@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[bug]Pagination: unable to render on HomeScreen. able to render ProductListScreen."
+git commit -m "[bug]Pagination: fixed url route."
 
 git status
 

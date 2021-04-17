@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated to development in env"
+git commit -m "fixed user profile update issue."
 
 git status
 

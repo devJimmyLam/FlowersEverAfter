@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
+import ProductCarousel from '../components/ProductCarousel'
 import { listProducts } from '../actions/productActions.js'
 import Paginate from '../components/Paginate';
 
@@ -24,14 +25,11 @@ const HomeScreen = ({ match }) => {
 
 	return (
 		<div>
-			<Row>
-				<Col>
-					<h1>Latest Flowers</h1>
-				</Col>
-				<Col>
-					<h5 className="text-success">SAVE 15% ON YOUR ORDER TODAY!</h5>
-				</Col>
-			</Row>
+			<div className='text-center'>
+				<h5 className="text-success">SAVE 15% ON YOUR ORDER TODAY!</h5>
+			</div>
+			{!keyword && <ProductCarousel />}
+			<h1>Latest Flowers</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (

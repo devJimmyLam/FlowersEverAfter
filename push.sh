@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "[bug]Pagination: fixed url route."
+git commit -m "created top rated product carousel"
 
 git status
 

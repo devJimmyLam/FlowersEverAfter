@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
-import ProductCarousel from '../components/ProductCarousel'
-import { listProducts } from '../actions/productActions.js'
+import Meta from '../components/Meta';
+import ProductCarousel from '../components/ProductCarousel';
+import { listProducts } from '../actions/productActions.js';
 import Paginate from '../components/Paginate';
 
 
@@ -25,10 +27,14 @@ const HomeScreen = ({ match }) => {
 
 	return (
 		<div>
+			<Meta />
 			<div className='text-center'>
 				<h5 className="text-success">SAVE 15% ON YOUR ORDER TODAY!</h5>
 			</div>
-			{!keyword && <ProductCarousel />}
+			{!keyword
+				? <ProductCarousel />
+				: <Link to='/' className='btn btn-light'>Go Back</Link>
+			}
 			<h1>Latest Flowers</h1>
 			{loading ? (
 				<Loader />

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "created top rated product carousel"
+git commit -m "created custom meta tags with Helmet"
 
 git status
 

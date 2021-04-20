@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "fixed user profile update issue."
+git commit -m "gitignore data"
 
 git status
 

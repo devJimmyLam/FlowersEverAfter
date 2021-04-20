@@ -8,10 +8,10 @@ node_modules/
 
 # testing
 /coverage
-backend/data/*
 
 # production
 /frontend/build
+/backend/data/*
 
 # misc
 .DS_Store
@@ -32,4 +32,4 @@ bootstrap.sh
 VagrantFile
 bower_components/
 package-lock.json
-
+backend/data/*

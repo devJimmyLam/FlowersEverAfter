@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "gitignore data"
+git commit -m "added data"
 
 git status
 

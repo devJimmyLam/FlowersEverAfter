@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added data"
+git commit -m "removed data"
 
 git status
 

@@ -30,10 +30,9 @@ $ git clone https://github.com/devJimmyLam/FlowersEverAfter.git
 2. Install the required dependencies:
 ```
 # cd to root of app 
-npm install
-
+$ npm install
 # cd frontend
-npm install
+$ npm install
 ```
 3. Run your server
 ```

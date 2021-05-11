@@ -69,4 +69,4 @@ npm run dev
   * [MongoDB](https://www.mongodb.com/)
 
 ## Contributing
-Please feel free to fork from this repository, make pull requests and help improve the game by sending suggestions to dev.jimmylam@gmail.com
+Please feel free to fork from this repository, make pull requests and help improve the web app by sending suggestions to dev.jimmylam@gmail.com

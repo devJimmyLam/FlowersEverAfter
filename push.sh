@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "removed data"
+git commit -m "updated readme"
 
 git status
 

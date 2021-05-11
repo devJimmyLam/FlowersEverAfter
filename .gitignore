@@ -28,8 +28,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-push.sh
-seeder.js
 bootstrap.sh
 VagrantFile
 bower_components/

@@ -28,11 +28,11 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 $ git clone https://github.com/devJimmyLam/FlowersEverAfter.git
 ```
 2. Install the required dependencies:
-cd to root of app and run command below 
+- cd to root of app and run command below 
 ```
 $ npm install
 ```
-cd to frontend and run command below
+- cd to frontend and run command below
 ```
 $ npm install
 ```

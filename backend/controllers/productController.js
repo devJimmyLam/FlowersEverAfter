@@ -2,9 +2,8 @@ import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel.js'
 
 
-//@desc		Fetch all products
-//@route	GET /api/products
-//@access	Public
+//PUBLIC	access to fetch all products
+//GET 		/api/products
 const getProducts = asyncHandler(async (req, res) => {
 	const pageSize = 4
 	const page = Number(req.query.pageNumber) || 1

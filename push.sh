@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added State to address in cartcheckout screens."
+git commit -m "updated controller notes"
 
 git status
 

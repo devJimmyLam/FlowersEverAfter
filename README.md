@@ -7,14 +7,7 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 - Engineered a RESTful API backend deployed on Heroku with endpoints for products, users and orders.
 
 - Built an Admin platform and leveraged the Redux library to provide proprietors with a customized dashboard of customer sales data.
-<!-- - Full featured shopping cart
-- Product reviews and ratings
-- Product search feature
-- User profile with orders
-- Admin product management
-- Admin user management
-- Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration -->
+
 ## Demo COMING SOON
 <p align="center">
   <img src="./frontend/public/images/fea_welcome.png">
@@ -34,16 +27,7 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 ```bash
 $ git clone https://github.com/devJimmyLam/FlowersEverAfter.git
 ```
-2. Install node lastest version 14.15+
-```
-# checking node version
-node -v
-# checking available node versions
-nvm ls
-# updating node to lastest stable version
-nvm install <version>
-```
-3. Install the required dependencies:
+2. Install the required dependencies:
 ```
 # cd to root of app 
 npm install
@@ -51,12 +35,11 @@ npm install
 # cd frontend
 npm install
 ```
-4. Run your server
+3. Run your server
 ```
 # Run both frontend (:3000) & backend (:5000)
 npm run dev
 ```
-5. Go buy some flowers!
 
 ## Built With
 * Front-End

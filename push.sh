@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated readme"
+git commit -m "updated database"
 
 git status
 

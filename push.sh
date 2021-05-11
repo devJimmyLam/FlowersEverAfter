@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated controller notes"
+git commit -m "added State to shipping address model."
 
 git status
 

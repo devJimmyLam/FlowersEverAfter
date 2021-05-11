@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added State to shipping address model."
+git commit -m "updated client id for paypal account"
 
 git status
 

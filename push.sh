@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated client id for paypal account"
+git commit -m "fixed local storage issue after logout."
 
 git status
 

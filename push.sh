@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated backend"
+git commit -m "added State to address in cartcheckout screens."
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated database"
+git commit -m "updated backend"
 
 git status
 

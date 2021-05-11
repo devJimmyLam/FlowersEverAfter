@@ -1,5 +1,5 @@
-//db seeder will be used for importing sample data like users and products
-//not part of application
+//db seeder will be used for importing test data like users and products.
+//not part of production of live app.
 
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'

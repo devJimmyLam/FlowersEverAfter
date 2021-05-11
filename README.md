@@ -37,7 +37,7 @@ $ npm install
 $ npm install
 ```
 3. Run your server
-cd to root and command below will run both frontend (:3000) & backend (:5000)
+- cd to root and command below will run both frontend (:3000) & backend (:5000)
 ```
 npm run dev
 ```

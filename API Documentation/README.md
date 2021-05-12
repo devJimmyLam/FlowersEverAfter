@@ -5,7 +5,7 @@ To avoid writing the documentation about your REST API, we can use DocGen comman
 
 ## FlowersEverAfter API Documentations
 - [API.html](https://github.com/devJimmyLam/FlowersEverAfter/blob/main/API%20Documentation/API.html) (right-click html file and open in browser to view)
-- Markdown API 
+- [Markdown API](https://github.com/devJimmyLam/FlowersEverAfter/blob/main/API%20Documentation/Markdown%20API.md) 
 <hr/>
 <p align="center">
   <img src="/API Documentation/api.png">

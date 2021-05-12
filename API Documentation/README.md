@@ -29,11 +29,13 @@ curl https://raw.githubusercontent.com/thedevsaddam/docgen/v3/install.sh -o inst
 - NOTE: Replace "input-postman-collection.json" with your Postman Collection file you created in step 3.
 
 <hr/>
+
 ```
 //HTML API Documentation.
 docgen build -i input-postman-collection.json -o ~/Downloads/index.html
 ```
 <hr/>
+
 ```
 //Markdown API Documentation.
 docgen build -i input-postman-collection.json -o ~/Downloads/index.md -m

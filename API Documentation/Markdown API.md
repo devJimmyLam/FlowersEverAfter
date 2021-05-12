@@ -7,7 +7,7 @@ E-commerce floral shop API for orders, products, reviews and users endpoints.
 
 * [Orders](#orders)
 
-  * [GET /api/orders/:id](#1-get-apiorders)
+  * [GET /api/orders/:id](#1-get-apiorders:id)
   * [GET /api/orders/myorders](#2-get-apiordersmyorders)
 
 * [Products](#products)
@@ -42,7 +42,7 @@ Routes that have to do with orders.
 
 
 
-### 1. GET /api/orders/ :id
+### 1. GET /api/orders/:id
 
 
 Get an order by id

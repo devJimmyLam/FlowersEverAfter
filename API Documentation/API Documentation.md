@@ -1,7 +1,7 @@
 
 # FlowersEverAfter
 
-Floral shopping cart api
+E-commerce floral shop API for orders, products, reviews and users endpoints.
 
 ## Indices
 
@@ -386,4 +386,4 @@ URL: {{URL}}/api/users/profile
 
 ---
 [Back to top](#flowerseverafter)
-> Made with &#9829; by [thedevsaddam](https://github.com/thedevsaddam) | Generated at: 2021-05-12 11:57:44 by [docgen](https://github.com/thedevsaddam/docgen)
+> Generated at: 2021-05-12 12:06:34 by Jimmy Lam

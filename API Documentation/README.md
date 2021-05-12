@@ -3,6 +3,15 @@
 ## Description
 To avoid writing the documentation about your REST API, we can use DocGen command-line tool that can generate HTML and Markdown documentation easily. Of course, there were other tools.To create documentation while writing APIs collection in Postman you need to provide the required information, that’s it.
 
+## FlowersEverAfter API Documentations
+- [HTML](/API Documentation/API Documentation.md)
+- [Markdown](API Documentation/API Documentation.md)
+<hr/>
+<p align="center">
+  <img src="/API Documentation/api.png">
+</p>
+<hr/>
+<hr/>
 ## Instructions
 ### Installaltion of DocGen
 1. For Macs & Linux see command below to install.

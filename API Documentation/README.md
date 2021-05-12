@@ -4,7 +4,7 @@
 To avoid writing the documentation about your REST API, we can use DocGen command-line tool that can generate HTML and Markdown documentation easily. To create documentation while writing APIs collection in Postman you need to provide the required information.
 
 ## FlowersEverAfter API Documentations
-- [API.html](https://www.devjimmylam.com/API.html) (click to view API detail endpoints)
+- [API.html](https://www.devjimmylam.com/API.html) (click to view detail API endpoints)
 - [Markdown API](https://github.com/devJimmyLam/FlowersEverAfter/blob/main/API%20Documentation/Markdown%20API.md) 
 <hr/>
 <p align="center">

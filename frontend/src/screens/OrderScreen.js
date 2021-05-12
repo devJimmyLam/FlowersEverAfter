@@ -56,7 +56,7 @@ const OrderScreen = ({ match, history }) => {
 			document.body.appendChild(script)
 		}
 
-		if (!order || successPay || successDeliver) {
+		if (!order || successPay || successDeliver || order._id != orderId) {
 			dispatch({ type: ORDER_PAY_RESET })
 			dispatch({ type: ORDER_DELIVER_RESET })
 			dispatch(getOrderDetails(orderId))
@@ -83,13 +83,18 @@ const OrderScreen = ({ match, history }) => {
 		: error
 			? <Message variant='danger'>{error}</Message> :
 			<div>
+				<Link
+					className='btn btn-outline-success btn-small my-3 mx-3'
+					to='/profile'
+				>Go Back
+				</Link>
 				<span className='align-baseline h2'>Purchase Details</span>
 				<Row>
 					<Col md={8}>
 						<ListGroup variant='flush'>
 							<ListGroup.Item>
-							<h2>Order</h2>
-							<p>
+								<h2>Order</h2>
+								<p>
 									<strong className=' text-success'># {order._id}</strong>
 								</p>
 							</ListGroup.Item>
@@ -116,7 +121,7 @@ const OrderScreen = ({ match, history }) => {
 									{order.shippingAddress.country}
 								</p>
 								{order.isDelivered ? (
-									<Message variant='success'>Delivered on {order.deliveredAt.substring(0,10)}</Message>
+									<Message variant='success'>Delivered on {order.deliveredAt.substring(0, 10)}</Message>
 								) : (
 									<Message variant='dark'>Not Delivered</Message>
 								)}
@@ -129,7 +134,7 @@ const OrderScreen = ({ match, history }) => {
 									{order.paymentMethod}
 								</p>
 								{order.isPaid ? (
-									<Message variant='success'>Paid on {order.paidAt.substring(0,10)}</Message>
+									<Message variant='success'>Paid on {order.paidAt.substring(0, 10)}</Message>
 								) : (
 									<Message variant='dark'>Not Paid</Message>
 								)}

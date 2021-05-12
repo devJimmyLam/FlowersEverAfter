@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated error handler"
+git commit -m "debuged: reset order details in local storage by adding order._id != orderId to useEffect"
 
 git status
 

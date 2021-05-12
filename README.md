@@ -5,6 +5,8 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 - Integrated Paypal SDK and customized middleware to provide both users and proprietors fast and secure payment options.
 
 - Engineered a RESTful API backend deployed on Heroku with endpoints for products, users and orders.
+  - [API Documentation](https://www.devjimmylam.com/API.html) (click to view API detail endpoints)
+  - [How To Create API Documenation](https://github.com/devJimmyLam/FlowersEverAfter/tree/main/API%20Documentation)
 
 - Built an Admin platform and leveraged the Redux library to provide proprietors with a customized dashboard of customer sales data.
 
@@ -21,9 +23,6 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 - Express
 - MongoDB
 
-## REST API Documentation
-- [API Documentation](https://www.devjimmylam.com/API.html) (click to view API detail endpoints)
-- [How To Create API Documenation](https://github.com/devJimmyLam/FlowersEverAfter/tree/main/API%20Documentation)
 
 ## Getting Started
 1. Fork and clone from this repository onto your local machine.

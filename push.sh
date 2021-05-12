@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "debuged: reset order details in local storage by adding order._id != orderId to useEffect"
+git commit -m "debuged: reset review rating and comment to 0 and empty string"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "updated gitignore"
+git commit -m "clear localStorage on user logout."
 
 git status
 

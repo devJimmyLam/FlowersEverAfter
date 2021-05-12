@@ -22,7 +22,8 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 - MongoDB
 
 ## REST API Documentation
-[API Document](https://github.com/devJimmyLam/FlowersEverAfter/tree/main/API%20Documentation)
+- [API Documentation](https://www.devjimmylam.com/API.html) (click to view API detail endpoints)
+- [How To Create API Documenation](https://github.com/devJimmyLam/FlowersEverAfter/tree/main/API%20Documentation)
 
 ## Getting Started
 1. Fork and clone from this repository onto your local machine.

@@ -8,7 +8,7 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 
 - Built an Admin platform and leveraged the Redux library to provide proprietors with a customized dashboard of customer sales data.
 
-## Demo COMING SOON
+## Demo
 <p align="center">
   <img src="./frontend/public/images/fea_welcome.png">
 </p>
@@ -21,6 +21,8 @@ E-commerce floral shop allowing customers to to shop, rate, and review floral bo
 - Express
 - MongoDB
 
+## REST API Documentation
+[API Document](https://github.com/devJimmyLam/FlowersEverAfter/tree/main/API%20Documentation)
 
 ## Getting Started
 1. Fork and clone from this repository onto your local machine.

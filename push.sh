@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "imported test data to db"
+git commit -m "updated gitignore"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "clear localStorage on user logout."
+git commit -m "added API Documentation"
 
 git status
 

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "added API Documentation"
+git commit -m "updated error handler"
 
 git status
 

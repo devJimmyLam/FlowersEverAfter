@@ -1,3 +1,4 @@
+//NOTES//
 //errror handler = middleware: function that has access to the request response cycle.
 //when we make a request, we can have a function that can access in these objects
 

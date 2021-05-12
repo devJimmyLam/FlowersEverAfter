@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "fixed local storage issue after logout."
+git commit -m "imported test data to db"
 
 git status
 

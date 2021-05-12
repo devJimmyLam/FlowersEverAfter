@@ -28,15 +28,17 @@ curl https://raw.githubusercontent.com/thedevsaddam/docgen/v3/install.sh -o inst
 4. Generate DocGen API Documentation. 
 - NOTE: Replace "input-postman-collection.json" with your Postman Collection file you created in step 3.
 
-- HTML API Documentation. 
+<hr/>
 ```
+//HTML API Documentation.
 docgen build -i input-postman-collection.json -o ~/Downloads/index.html
 ```
-
-- Markdown API Documentation.
+<hr/>
 ```
+//Markdown API Documentation.
 docgen build -i input-postman-collection.json -o ~/Downloads/index.md -m
 ```
+<hr/>
 
 5. Save/move API Documentation to your project folder. 
 

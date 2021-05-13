@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "imported test data"
+git commit -m "clean uploads for deployment"
 
 git status
 

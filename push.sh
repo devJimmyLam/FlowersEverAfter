@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "debuged: reset review rating and comment to 0 and empty string"
+git commit -m "imported test data"
 
 git status
 

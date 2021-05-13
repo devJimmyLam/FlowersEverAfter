@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "fixed paypal loading issue"
+git commit -m "removed go back button"
 
 git status
 

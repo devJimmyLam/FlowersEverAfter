@@ -83,11 +83,6 @@ const OrderScreen = ({ match, history }) => {
 		: error
 			? <Message variant='danger'>{error}</Message> :
 			<div>
-				<Link
-					className='btn btn-outline-success btn-small my-3 mx-3'
-					to='/profile'
-				>Go Back
-				</Link>
 				<span className='align-baseline h2'>Purchase Details</span>
 				<Row>
 					<Col md={8}>

@@ -2,7 +2,7 @@
 
 git add . --all
 
-git commit -m "clean uploads for deployment"
+git commit -m "clean /uploads for demo"
 
 git status
 
